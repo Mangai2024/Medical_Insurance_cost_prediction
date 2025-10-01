@@ -1,5 +1,5 @@
 🏥 **Medical Insurance Cost Prediction**
-
+💻 Local Run: `streamlit run app.py`  
 This project predicts medical insurance charges using demographic and lifestyle factors such as age, BMI, children, smoking status, and region.
 
 📌 **Problem Statement**
