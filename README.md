@@ -61,3 +61,36 @@ Random Forest performed the best overall with the highest R² (0.7941).
 XGBoost was slightly behind Random Forest but still performed better than Linear Regression.
 
 Linear Regression served as a good baseline but struggled with non-linear relationships in the data.
+With Feature Engineering (Random Forest)
+
+Random Forest (with FE)
+
+MAE: 2835.53
+
+RMSE: 4494.85
+
+R²: 0.8139
+
+🔍 Insights
+
+Smoking has the highest impact on insurance charges.
+
+BMI and Age interact strongly with smoking habits.
+
+Random Forest (tuned) gave the best performance with R² = 0.83.
+
+Feature Engineering improved interpretability but did not outperform tuned Random Forest in score (still useful for interview explanation).
+
+🚀 Future Improvements
+
+Apply hyperparameter tuning with RandomizedSearchCV / GridSearchCV
+
+Perform cross-validation for robust estimates
+
+Try log-transform of target (charges) to reduce skewness
+
+Deploy as a simple web app (Streamlit / FastAPI) for real-world usage
+
+📝 Conclusion
+
+This project demonstrates how machine learning can predict medical insurance costs effectively. Among all models tested, Random Forest Regressor with hyperparameter tuning achieved the best performance (R² ≈ 0.83). Feature engineering provided interpretability and domain insights, which are crucial in practical applications even if the score didn’t improve further.
