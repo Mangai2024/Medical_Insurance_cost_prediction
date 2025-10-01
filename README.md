@@ -1,16 +1,16 @@
-🏥 Medical Insurance Cost Prediction
+🏥 **Medical Insurance Cost Prediction**
 
 This project predicts medical insurance charges using demographic and lifestyle factors such as age, BMI, children, smoking status, and region.
 
-📌 Problem Statement
+📌 **Problem Statement**
 
 Health insurance companies need accurate models to estimate individual medical costs. The objective of this project is to build and compare machine learning models that can predict these charges reliably.
 
-📂 Dataset
+📂 **Dataset**
 
 Source: Medical Cost Personal Dataset (commonly on Kaggle)
 
-Features:
+**Features:**
 
 age → Age of the individual
 
@@ -30,8 +30,8 @@ charges → Insurance cost (USD)
 
 🧾 Workflow
 
-Data Preprocessing 🧹
-
+**Data Preprocessing 🧹
+**
 Handled missing values
 
 Encoded categorical variables
@@ -56,13 +56,13 @@ Created bins: age_bin, bmi_cat
 
 One-hot encoded categorical variables
 
-Modeling 🤖
-
+**Modeling 🤖
+**
 Linear Regression (baseline)
 
 Random Forest Regressor
 
-XGBoost Regressor
+**XGBoost Regressor**
 
 Model Evaluation 📏
 
@@ -71,7 +71,7 @@ Metrics: MAE, RMSE, R²
 📊 Results
 🔹 Without Feature Engineering
 
-Linear Regression
+**Linear Regression**
 
 MAE: 3733.41
 
@@ -97,7 +97,7 @@ R²: 0.7766
 
 🔹 With Feature Engineering (Random Forest)
 
-Random Forest (with FE)
+**Random Forest (with FE)**
 
 MAE: 2835.53
 
@@ -115,8 +115,8 @@ R²: 0.8139
 
 🧠 Feature Engineering improved interpretability but did not outperform tuned Random Forest in score
 
-🚀 Future Improvements
-
+🚀 ****Future Improvements**
+**
 🔧 Apply hyperparameter tuning with RandomizedSearchCV or GridSearchCV
 
 🔄 Perform cross-validation for robust estimates
@@ -125,8 +125,8 @@ R²: 0.8139
 
 🌐 Deploy as a simple web app (Streamlit or FastAPI)
 
-📝 Conclusion
-
+📝**** **Conclusion********
+**
 This project demonstrates how machine learning can predict medical insurance costs effectively.
 Among all models tested, Random Forest Regressor with hyperparameter tuning achieved the best performance (R² ≈ 0.83).
 Feature engineering provided interpretability and domain insights, which are important in practical applications even if the score did not improve further.
